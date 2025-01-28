@@ -9,32 +9,35 @@
     <!-- tailwind customizing config -->
     <script>
         tailwind.config = {
-          theme: {
+        theme: {
             extend: {
-              colors: {
+            colors: {
                 clifford: '#da373d',
-              }
+            },
+            fontFamily:{
+                    'manrope':["Manrope", serif]
             }
-          }
+            }
         }
-      </script>
-      <!-- font-awesome-icon -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- font awesome cdn -->
+        }
+    </script>
+    <!-- font-awesome-icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
     <style>
         .manrope-font {
-    font-family: "Manrope", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+        font-family: "Manrope", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     </style>
 </head>
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <header class="md:flex pt-10 mb-32">
             <div>
@@ -99,7 +102,6 @@
                         <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
                     </div>
                  </div>
-
              </div>
         </section>
         <!-- great tea section  -->
@@ -138,18 +140,18 @@
         <section class="mb-24">
             <div class="bg-gradient-to-r from-orange-400 to-red-400 rounded-xl grid grid-cols-1 lg:grid-cols-2 px-7 md:px-16">
             <!-- text div  -->
-             <div class="flex justify-center items-center">
-                <div class="w-5/6">
-                    <h1 class="text-5xl font-bold mb-5 mt-10">Meet Our Super Clients</h1>
-                    <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                    <button class="bg-white text-orange-500 px-3 py-2 rounded-lg font-bold">Show All</button>
-                 </div>
-             </div>
-             <!-- reviews card div  -->
-             <div class="relative py-24">
-                        <!-- top card  -->
-                        <div class="relative md:left-32 h-56 w-full md:w-3/4
-                        bg-white text-black rounded-lg flex items-center px-5 opacity-40">                        
+                <div class="flex justify-center items-center">
+                    <div class="w-5/6">
+                        <h1 class="text-5xl font-bold mb-5 mt-10">Meet Our Super Clients</h1>
+                        <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <button class="bg-white text-orange-500 px-3 py-2 rounded-lg font-bold">Show All</button>
+                     </div>
+                </div>
+                <!-- reviews card div  -->
+                <div class="relative py-24">
+                    <!-- middle card  -->
+                    <div class="absolute z-10 top-44 md:top-52">
+                        <div class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5">                        
                             <div class="absolute -top-5 -left-5">
                                 <img class="p-1" src="images/client.png" alt="">
                             </div>
@@ -161,23 +163,91 @@
                                 </small>
                             </div>
                         </div>
-                        <!-- bottom card  -->
-                        <div class="relative md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center opacity-40 
-                        px-5">                       
-                            <div class="absolute -top-5 -left-5">
-                                <img class="p-1" src="images/client.png" alt="">
-                            </div>
-                            <div>
-                                <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                                <h1 class="font-bold">Ilham Yuda</h1>
-                                <small class="font-bold text-gray-500">
-                                Businessman
-                                </small>
-                            </div>
+                    </div>
+                    <!-- top card  -->
+                    <div class="relative md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40">                        
+                        <div class="absolute -top-5 -left-5">
+                            <img class="p-1" src="images/client.png" alt="">
                         </div>
+                        <div>
+                            <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                            <h1 class="font-bold">Ilham Yuda</h1>
+                            <small class="font-bold text-gray-500">Businessman</small>
+                        </div>
+                    </div>
+                    <!-- bottom card  -->
+                    <div class="relative md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center opacity-40 px-5">                       
+                        <div class="absolute -top-5 -left-5">
+                            <img class="p-1" src="images/client.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                            <h1 class="font-bold">Ilham Yuda</h1>
+                            <small class="font-bold text-gray-500">Businessman</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="bg-orange-100 text-gray-700 px-4 md:px-16 py-10">
+        <div class="w-9/12 mx-auto">
+            <!-- logo -->
+             <div class="mb-8 flex justify-between">
+                <img class="mb-8" src="images/cup.png" alt="">
+                <div class="flex items-center gap-10">
+                    <h4>Ready to get started</h4>
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold px-3 py-2 rounded-lg">Get started</button>
+                </div>
+             </div>
+             <!-- links  -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- first-column  -->
+                 <div class="">
+                    <h3 class="font-semibold text-lg mb-3 ">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-500" href="#">Home</a></li>
+                        <li><a class="hover:text-orange-500" href="#">About Us</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Privacy Policy</a></li>
+                    </ul>
+                 </div>
+                <!-- second-column  -->
+                 <div class="">
+                    <h3 class="font-semibold text-lg mb-3 ">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-500" href="#">Life Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Car Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Health Insurance</a></li>
+                        <li><a class="hover:text-orange-500" href="#">House Insurance</a></li>
+                    </ul>
+                 </div>
+                <!-- third-column  -->
+                 <div class="">
+                    <h3 class="font-semibold text-lg mb-3 ">Help</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-500" href="#">FAQs</a></li>
+                        <li><a class="hover:text-orange-500" href="#">Contact Us</a></li>
+                    </ul>
+                 </div>
+                 <!-- fourth column  -->
+                  <div>
+                    <h3 class="font-semibold text-lg mb-3">Subscribe to our newsletter</h3>
+                    <div class="space-y-2">
+                        <input class="bg-transparent border-b-2 border-black w-4/6" type="email" name="" id="" placeholder="Email Address">
+                        <i class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 rounded-full text-white justify-center items-center"></i>
+                        <div class="flex justify-between w-2/5 mb-2 mt-8">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="mt-4 pt-4 text-center">
+                <p class="text-gray-600 text-sm">© 2027 UIDesign.to - All rights reserved.</p>
+              </div>
+        </div>
+    </footer>
 </body>
 </html>
